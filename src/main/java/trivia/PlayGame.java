@@ -7,6 +7,8 @@ import java.util.Scanner;
 // ONLY RUN IT TO MANUALLY PLAY THE GAME YOURSELF TO UNDERSTAND THE PROBLEM
 public class PlayGame {
 
+   //Test comment
+
    private static final Scanner scanner = new Scanner(System.in);
 
    public static void main(String[] args) {
