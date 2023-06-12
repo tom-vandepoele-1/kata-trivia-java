@@ -130,31 +130,36 @@ public class GameBetter implements IGame {
 
             boolean winner = didPlayerWin();
             currentPlayer++;
-            if (currentPlayer == players.size()) currentPlayer = 0;
+            if (currentPlayer == players.size()) {
+               currentPlayer = 0;
+            }
 
             return winner;
          } else {
             currentPlayer++;
-            if (currentPlayer == players.size()) currentPlayer = 0;
+            if (currentPlayer == players.size()) {
+               currentPlayer = 0;
+            }
             return true;
          }
 
 
-      } else {
-
-         System.out.println("Answer was corrent!!!!");
-         purses[currentPlayer]++;
-         System.out.println(players.get(currentPlayer)
-                            + " now has "
-                            + purses[currentPlayer]
-                            + " Gold Coins.");
-
-         boolean winner = didPlayerWin();
-         currentPlayer++;
-         if (currentPlayer == players.size()) currentPlayer = 0;
-
-         return winner;
       }
+      System.out.println("Answer was corrent!!!!");
+      purses[currentPlayer]++;
+      System.out.println(players.get(currentPlayer)
+          + " now has "
+          + purses[currentPlayer]
+          + " Gold Coins.");
+
+      boolean winner = didPlayerWin();
+      currentPlayer++;
+      if (currentPlayer == players.size()) {
+         currentPlayer = 0;
+      }
+
+      return winner;
+
    }
 
    public boolean wrongAnswer() {
