@@ -1,20 +1,19 @@
 package trivia;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 // REFACTOR ME
 public class GameBetter implements IGame {
    final List<String> players = new ArrayList<>();
-   int[] places = new int[6];
-   int[] purses = new int[6];
-   boolean[] inPenaltyBox = new boolean[6];
+   final int[] places = new int[6];
+   final int[] purses = new int[6];
+   final boolean[] inPenaltyBox = new boolean[6];
 
-   List<String> popQuestions = new ArrayList<>();
-   List<String> scienceQuestions = new ArrayList<>();
-   List<String> sportsQuestions = new ArrayList<>();
-   List<String> rockQuestions = new ArrayList<>();
+   final List<String> popQuestions = new ArrayList<>();
+   final List<String> scienceQuestions = new ArrayList<>();
+   final List<String> sportsQuestions = new ArrayList<>();
+   final List<String> rockQuestions = new ArrayList<>();
 
    int currentPlayer = 0;
    boolean isGettingOutOfPenaltyBox;
